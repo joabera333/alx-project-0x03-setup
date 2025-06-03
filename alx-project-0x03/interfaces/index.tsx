@@ -1,19 +1,26 @@
 // Button component interface
+
+import { ReactNode } from "react";
+
 export interface ButtonProps {
-	action: () => void;
 	buttonLabel: string;
-	buttonBackgroundColor: "blue" | "green" | "orange";
-	className?: string;
+	buttonSize?: string;
+	buttonBackgroundColor?: "red" | "blue" | "orange" | "green";
+	action?: () => void;
+}
+
+export interface PageRouteProps {
+	pageRoute: string;
 }
 
 // Layout component interface
-export interface LayoutProps {
+/*export interface LayoutProps {
 	children: React.ReactNode;
 	showHeader?: boolean;
 	showFooter?: boolean;
 }
+*/
 
-// Page routing interface
-export interface PageRouteProps {
-	pageRoute: string;
+export interface LayoutProps {
+	children: ReactNode;
 }
