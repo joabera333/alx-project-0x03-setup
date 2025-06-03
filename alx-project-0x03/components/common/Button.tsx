@@ -1,5 +1,5 @@
 /*## components/common/Button.tsx*/
-
+import { ButtonProps } from "@/interfaces";
 interface ButtonProps {
 	buttonLabel: string;
 	buttonSize?: string;

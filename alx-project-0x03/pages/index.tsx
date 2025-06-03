@@ -126,6 +126,7 @@ export default Home;
 
 import Button from "@/components/common/Button";
 import { useRouter } from "next/router";
+import { type PageRouteProps } from "@/interfaces";
 
 interface PageRouteProps {
 	pageRoute: string;
